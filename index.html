@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exo-javascript-galerie</title>
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -47,31 +48,36 @@
         <h2>Galerie</h2>
         <div class="d-flex justify-content-around my-3">
 
-            <img src="https://picsum.photos/300/300" alt="lol">
+            <!-- img1 -->
+            <a class="images" href="https://picsum.photos/200/300?random=1" data-lightbox="example-set"
+                data-title="Click the right half of the image to move forward."><img class="example-image"
+                    src="https://picsum.photos/200/300?random=1" alt="" /></a>
 
+            <!-- img2 -->
+            <a class="images" href="https://picsum.photos/200/300?random=2" data-lightbox="example-set"
+                data-title="Or press the right arrow on your keyboard."><img class="example-image"
+                    src="https://picsum.photos/200/300?random=2" alt="" /></a>
 
-            <img src="https://picsum.photos/300/300" alt="lol2">
+            <!-- img3 -->
+            <a class="images" href="https://picsum.photos/200/300?random=3" data-lightbox="example-set"
+                data-title="Or press the right arrow on your keyboard."><img class="example-image"
+                    src="https://picsum.photos/200/300?random=3" alt="" /></a>
 
-            <img src="https://picsum.photos/300/300" alt="lol2">
+            <!-- img4 -->
+            <a class="images" href="https://picsum.photos/200/300?random=4" data-lightbox="example-set"
+                data-title="Or press the right arrow on your keyboard."><img class="example-image"
+                    src="https://picsum.photos/200/300?random=4" alt="" /></a>
 
-            <img src="https://picsum.photos/300/300" alt="lol2">
-        </div>
-
-        <div class="d-flex justify-content-around my-3">
-            <img src="https://picsum.photos/300/300" alt="lol2">
-
-            <img src="https://picsum.photos/300/300" alt="lol2">
-
-            <img src="https://picsum.photos/300/300" alt="lol2">
-
-            <img src="https://picsum.photos/300/300" alt="lol2">
 
         </div>
 
     </main>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
     <script src="assets/js/script.js"></script>
+
 
     <footer class="mt-auto text-center border border-dark">
         YUUUUUUR This is the footer bro !
