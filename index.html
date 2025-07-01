@@ -5,7 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>exo-javascript-galerie</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Unkempt:wght@400;700&display=swap"
+        rel="stylesheet">
+
     <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet" />
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
@@ -19,16 +27,69 @@
     </header>
     <main>
         <h1>PICASU</h1>
+        <div class="image-logo">
+            <img src="assets/img/logo-photographe.png" alt="logo-photographe">
+        </div>
+
+        <h2>Presentation de la photographe Alice DUPONT</h2>
+
+        <div class="containerPhoto mx-auto">
+            <img class="imgp" src="assets/img/photographe.jpg" alt="photo de la photographe">
+
+            <div class="Apropos">
+                <p><b>A propos : </b></p>
+                <p>Passionnée par la lumière, les instants sincères et les émotions vraies, je suis
+                    photographe
+                    professionnelle depuis 5 ans.</p>
+                <p>Mon objectif : capturer ce qui vous rend unique.</p>
+
+                <p>Que ce soit pour un mariage, un portrait, une séance en famille ou un projet artistique, je crée des
+                    images naturelles, sensibles et intemporelles. Chaque séance est une rencontre, un moment de
+                    confiance, où je vous guide avec douceur pour révéler votre authenticité.</p>
+
+                <p>Basée à Niort, je me déplace partout en France (et au-delà !) pour raconter vos histoires
+                    en images. Bienvenue dans mon univers.</p>
+            </div>
+        </div>
 
 
+        <!-- Galerie -->
+        <h2>Galerie photo</h2>
+        <div class="imagegallerie mx-auto" id="img-div">
+
+            <!-- img1
+            <a class="images" href="https://picsum.photos/200/300?random=1" data-lightbox="example-set"
+                data-title="Click the right half of the image to move forward."><img class="example-image"
+                    src="https://picsum.photos/200/300?random=1" alt="" /></a>
+
+            img2
+            <a class="images" href="https://picsum.photos/200/300?random=2" data-lightbox="example-set"
+                data-title="Or press the right arrow on your keyboard."><img class="example-image"
+                    src="https://picsum.photos/200/300?random=2" alt="" /></a>
+
+            img3
+            <a class="images" href="https://picsum.photos/200/300?random=3" data-lightbox="example-set"
+                data-title="Or press the right arrow on your keyboard."><img class="example-image"
+                    src="https://picsum.photos/200/300?random=3" alt="" /></a>
+
+            img4 -->
+            <!-- <a class="images" href="https://picsum.photos/200/300?random=4" data-lightbox="example-set"
+                data-title="Or press the right arrow on your keyboard."><img class="example-image"
+                    src="https://picsum.photos/200/300?random=4" alt="" /></a> -->
 
 
-
+        </div>
 
     </main>
 
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="node_modules/lightbox2/dist/js/lightbox-plus-jquery.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <footer class="mt-auto text-center border border-dark">
+        Alice DUPONT©, tous droits réservés.
+    </footer>
 </body>
 
 </html>
