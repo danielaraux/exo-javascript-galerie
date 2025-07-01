@@ -8,6 +8,11 @@ body {
     font-size: 1.1em;
 }
 
+.image-logo>img {
+    height: 150px;
+    width: 170px;
+    border-radius: 5px;
+}
 
 h2 {
     margin: 1em;
@@ -49,7 +54,8 @@ main {
 .Apropos {
     width: 40%;
     border-radius: 5px;
-    background-color: white;
+    background: #EEAECA;
+    background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
     padding-bottom: 20px;
     padding-top: 20px;
 

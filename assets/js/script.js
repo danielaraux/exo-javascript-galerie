@@ -14,15 +14,12 @@ function generateRandomImages(nbPhotos) {
 // On appelle notre fonction pour la faire fonctionner
 generateRandomImages(10)
 
-
 // Scroll infini
-window.addEventListener('scroll', () => { // Dès qu'il y a un scroll
+window.addEventListener('scroll', () => { // Dès qu'il y a un scroll ça s'execute
     console.log(window.scrollY) //scrolled from top
     console.log(window.innerHeight) //visible part of screen
-    if (window.scrollY + window.innerHeight >=
+    if (window.scrollY + window.innerHeight >= // Si 
         document.documentElement.scrollHeight) {
-        generateRandomImages(10);
+        generateRandomImages(100);
     }
 })
-
-
