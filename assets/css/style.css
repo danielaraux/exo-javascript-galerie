@@ -1,7 +1,44 @@
 body {
-    background-color: beige;
+    background-color: white;
 }
 
 h2 {
     margin: 1em;
 }
+
+.containerPhoto {
+    display: flex;
+}
+
+@media (max-width: 414px) {
+
+    .containerPhoto {
+        flex-direction: column;
+    }
+
+    .imgp {
+        height: 100%;
+        width: auto;
+    }
+
+}
+
+
+.imgp {
+    height: 400px;
+    width: 500px;
+}
+
+
+.imagegallerie {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    padding-top: 15px;
+}
+
+
+
+/* .divPhotographe {}
+
+.divApropos {} */
