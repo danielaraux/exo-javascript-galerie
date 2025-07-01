@@ -1,27 +1,28 @@
-let nbPhotos = 16
-
-function generateRandomImages() {
+function generateRandomImages(nbPhotos) {
 
     for (index = 0; index < nbPhotos; index++) {
         let randomIndex = Math.floor(Math.random() * 100)
 
-        document.getElementById("img-div").innerHTML += `<a class="images" href="https://picsum.photos/id/${randomIndex}/200/300.webp" data-lightbox="example-set"
+        document.getElementById("img-div").innerHTML += `
+        <a class="images" href="https://picsum.photos/id/${randomIndex}/800/1200.webp" data-lightbox="example-set"
                 data-title="Click the right half of the image to move forward."><img class="example-image"
-                    src="https://picsum.photos/id/${randomIndex}/200/300.webp" alt="" /></a>`
+                    src="https://picsum.photos/id/${randomIndex}/200/300.webp" alt="" /></a>
+                    `
     }
-
-
-    // for (index = 0; index < nbPhotos; index++) {
-    //     document.getElementById("img-div").innerHTML += `<a class="images" href="https://picsum.photos/500/700?random=${index}" data-lightbox="example-set"
-    //             data-title="Click the right half of the image to move forward."><img class="example-image"
-    //                 src="https://picsum.photos/500/700?random=${index}" alt="" /></a>`
-    // }
 }
 
 // On appelle notre fonction pour la faire fonctionner
-generateRandomImages()
+generateRandomImages(10)
 
 
-// // for (let index = 0; index < word.length; index++) {
-// document.getElementById("guessWord").innerHTML += `
-//     <div id="letter-${index}" class="letter"></div>
+// Scroll infini
+window.addEventListener('scroll', () => { // Dès qu'il y a un scroll
+    console.log(window.scrollY) //scrolled from top
+    console.log(window.innerHeight) //visible part of screen
+    if (window.scrollY + window.innerHeight >=
+        document.documentElement.scrollHeight) {
+        generateRandomImages(10);
+    }
+})
+
+
