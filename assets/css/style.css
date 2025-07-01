@@ -1,24 +1,39 @@
 body {
-    background-color: white;
+    background-color: lightblue;
+
+    font-family: "Unkempt", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2em;
 }
+
 
 h2 {
     margin: 1em;
 }
 
+main {
+    text-align: center;
+}
+
 .containerPhoto {
     display: flex;
+    width: 80%;
+    justify-content: space-around;
+
+
 }
 
 @media (max-width: 414px) {
 
     .containerPhoto {
         flex-direction: column;
+        width: 100%;
     }
 
-    .imgp {
+    .containerPhoto>img {
         height: 100%;
-        width: auto;
+        width: 100%;
     }
 
 }
@@ -26,19 +41,40 @@ h2 {
 
 .imgp {
     height: 400px;
-    width: 500px;
+    width: 600px;
+    border-radius: 5px;
+}
+
+.Apropos {
+    width: 40%;
+    border-radius: 5px;
+    background-color: beige;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+    @media (max-width: 414px) {
+        width: 100%;
+    }
 }
 
 
 .imagegallerie {
+    width: 75%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
-    padding-top: 15px;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    gap: 30px;
+
+    @media (max-width: 414px) {
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+    }
 }
 
-
-
-/* .divPhotographe {}
-
-.divApropos {} */
+footer {
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}

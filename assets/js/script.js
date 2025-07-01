@@ -1,10 +1,8 @@
 let nbPhotos = 16
 
-
-
 function generateRandomImages() {
 
-    for (index = 1; index < nbPhotos; index++) {
+    for (index = 0; index < nbPhotos; index++) {
         let randomIndex = Math.floor(Math.random() * 100)
 
         document.getElementById("img-div").innerHTML += `<a class="images" href="https://picsum.photos/id/${randomIndex}/200/300.webp" data-lightbox="example-set"
@@ -20,11 +18,7 @@ function generateRandomImages() {
     // }
 }
 
-
-
-
-
-
+// On appelle notre fonction pour la faire fonctionner
 generateRandomImages()
 
 
